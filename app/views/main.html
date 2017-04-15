@@ -1,0 +1,15 @@
+  <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+      	<div class="col-md-6 col-md-offset-3">
+  			<input type="text" class="form-control" ng-model="city" ng-blur="getCityWeather(city)">
+		</div>
+      </div>
+    </div>
+    <div
+    <div ng-bind="data.name"></div>
+    <div ng-repeat="weatherInfo in data.weather">
+    	<div ng-bind="weatherInfo.description"></div>
+    	<div ng-bind="weatherInfo.main"></div>
+    	<img ng-src="http://openweathermap.org/img/w/{{weatherInfo.icon}}.png"/>
+    </div>
+    </div>

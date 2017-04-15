@@ -11,8 +11,6 @@
 angular
   .module('weatherAppFinApp',['ngRoute']).config(function ($routeProvider,$locationProvider) {
 
-   
-    
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
