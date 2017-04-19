@@ -1,17 +1,27 @@
-  <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-      	<div class="col-md-6 col-md-offset-3">
-      	<tags-input ng-model="tags" ng-blur="getCityWeather(tags)" placeholder="Add city"></tags-input>
-		</div>
-      </div>
+<div class="header">
+   <div class="navbar navbar-default" role="navigation">
+    	<div  class="col-md-6 col-md-offset-3">
+      	<tags-input  id="input" ng-model="tags" ng-blur="getCityWeather(tags)" placeholder="Add city"></tags-input>
+		  </div>
     </div>
-    <div ng-bind="data.name"></div>
-    <div ng-repeat="weatherInfo in data.weather">
-    	<div ng-bind="weatherInfo.description"></div>
-    	<div ng-bind="weatherInfo.main"></div>
-    	<img ng-src="http://openweathermap.org/img/w/{{weatherInfo.icon}}.png"/>
-    </div>
-    </div>
+</div>
 
 
+
+
+<div class="container">
+
+<div class="row">
+   <div class="weather-result" ng-repeat="weatherInfo in data.weather">
+      <div class="col-md-4" ng-bind="data.name"></div>
+        <div class="col-md-4">
+          <div  ng-bind="weatherInfo.main"></div>
+          <div> <img ng-src="http://openweathermap.org/img/w/{{weatherInfo.icon}}.png"/></div>
+        </div>
+    	    <div class="col-md-4"  ng-bind="weatherInfo.description"></div>
+    </div>
+  </div>
+ 
+</div>
+      
 
