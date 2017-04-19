@@ -12,7 +12,7 @@ angular.module('weatherAppFinApp')
 $scope.tags = [];
 $scope.getCityWeather = function(tags){
         angular.forEach($scope.tags, function(value, key) {
-         $scope.data =  $http.get('http://api.openweathermap.org/data/2.5/weather?q='+value.text+'&APPID=ff924cc48a14cc63723ccaff0bf6b850')
+         $scope.data =  $http.get('http://api.openweathermap.org/data/2.5/weather?q='+value.text+'&units=metric&APPID=ff924cc48a14cc63723ccaff0bf6b850')
                     .then(function(response) {
                        $scope.data = response.data;
                     }, function(error) {
