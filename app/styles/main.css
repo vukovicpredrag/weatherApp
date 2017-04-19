@@ -106,7 +106,7 @@ margin-top:10px;
 
 
 .row  {
-  width:360px;
+  width:340px;
   margin-top: 40px;
   background-color: white;
   border-radius: 4px;
@@ -127,12 +127,8 @@ margin-top:10px;
 }
 
 .main-info {
-  font-size: 28px;
+  font-size: 36px;
   color:#737B87;
-  font-weight: bold;
-}
-.main-temp {
-  padding-top: 10px;
 }
 
 .info {
@@ -145,12 +141,10 @@ margin-top:10px;
   color:#737B87;;
   font-weight: bold;
   font-size:12px;
-
 }
 
 .city-name {
   font-size: 16px;
   color:#727D82;
   font-weight:bold;
-
 }
