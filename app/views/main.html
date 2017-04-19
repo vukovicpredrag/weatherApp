@@ -5,26 +5,26 @@
 		  </div>
     </div>
 </div>
+
+
+
 <div class="container">
 
-
- 
-
 <div class="row">
-
    <div class="weather-result" ng-repeat="weatherInfo in data.weather">
-      <div class="col-md-4" ng-bind="data.name"></div>
-         <span  ng-bind="data.main.temp"></span> C
-         <span  ng-bind="data.main.humidity"></span> %
-           <span ng-bind="data.wind.speed"></span> km/h
+      <div class="col-md-4"> <div class="city-name" ng-bind="data.name"></div>  <div> <img ng-src="http://openweathermap.org/img/w/{{weatherInfo.icon}}.png"/></div> </div>
         <div class="col-md-4">
-          <div  ng-bind="weatherInfo.main"></div>
-          <div> <img ng-src="http://openweathermap.org/img/w/{{weatherInfo.icon}}.png"/></div>
+          <div>  <span class="main-info" ng-bind="data.main.temp"></span><span class="c-temp"> &#8451;</span></div>
+          <div class="info-letter" ng-bind="weatherInfo.description"></div>
         </div>
-    	    <div class="col-md-4" ng-bind="weatherInfo.description"></div>
+        <div class="info" class="col-md-4" >           
+          <div><span class="info-letter">Humidity:</span> <span class="info-letter" ng-bind="data.main.humidity"></span><span class="info-letter">%</span></div>
+          <div><span class="info-letter">Wind:</span>  <span class="info-letter" ng-bind="data.wind.speed"></span><span class="info-letter">km/h</span></div> 
+         </div>
     </div>
   </div>
 
 </div>
       
 
+       

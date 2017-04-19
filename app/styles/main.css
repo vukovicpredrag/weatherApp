@@ -1,5 +1,5 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rooto', sans-serif;
 
 }
 
@@ -106,7 +106,7 @@ margin-top:10px;
 
 
 .row  {
-  width:280px;
+  width:360px;
   margin-top: 40px;
   background-color: white;
   border-radius: 4px;
@@ -120,3 +120,37 @@ margin-top:10px;
 
 
 
+.info-letter {
+  color:#D5D8DB;
+ 
+  font-size: 14px;
+}
+
+.main-info {
+  font-size: 28px;
+  color:#737B87;
+  font-weight: bold;
+}
+.main-temp {
+  padding-top: 10px;
+}
+
+.info {
+  font-size: 14px;
+  padding-top:14px;
+}
+
+.c-temp{
+  position: absolute;
+  color:#737B87;;
+  font-weight: bold;
+  font-size:12px;
+
+}
+
+.city-name {
+  font-size: 16px;
+  color:#727D82;
+  font-weight:bold;
+
+}
